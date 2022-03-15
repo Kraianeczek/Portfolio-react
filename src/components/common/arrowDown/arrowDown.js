@@ -1,8 +1,8 @@
 import styles from './arrowDown.module.scss';
 
-const ArrowDown = () => {
+const ArrowDown = props => {
     return (
-        <a href="#about"><i className={styles.arrowDown + ' fa fa-angle-double-down '} alt="about"></i></a>
+        <a href={props.href}><i className={styles.arrowDown + ' fa fa-angle-double-down '} alt="about"></i></a>
     )
 }
 

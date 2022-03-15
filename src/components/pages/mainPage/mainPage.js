@@ -1,9 +1,13 @@
+import AboutMe from "../aboutMe/aboutMe";
 import Header from "../header/header";
 
 const MainPage = () => {
-    return(
-        <Header></Header>
-    )
+  return (
+    <div>
+      <Header />
+      <AboutMe />
+    </div>
+  )
 }
 
 export default MainPage;

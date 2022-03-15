@@ -1,12 +1,8 @@
-import ArrowDown from "../../common/arrowDown/arrowDown"
-import ArrowUp from "../../common/arrowUp/arrowUp"
 import styles from './arrowBox.module.scss'
 
-const ArrowBox = () => {
+const ArrowBox = props => {
     return (
-        <div className={styles.arrowBox}>
-            <ArrowDown></ArrowDown>
-            <ArrowUp></ArrowUp>
+        <div className={styles.arrowBox} id={props.id}>{props.tit}
         </div>
     )
 }

@@ -8,6 +8,10 @@
   --gradient: linear-gradient(60deg, #0000b3, #7300e6, #990099, #cc0000);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
