@@ -1,12 +1,11 @@
 import ArrowDown from '../../common/arrowDown/arrowDown';
 import ArrowUp from '../../common/arrowUp/arrowUp';
 import ArrowBox from '../../views/arrowBox/arrowBox';
-import styles from './aboutMe.module.scss'
 
 const AboutMe = () => {
   return (
-    <div className={styles.about}>
-      <div className={styles.restContainer}>
+    <div className="about">
+      <div className="restContainer">
 
       </div>
       <ArrowBox tit={

@@ -21,5 +21,14 @@ body {
 
 .topContainer {
   display: flex;
+  height: 95vh;
+}
+
+.restContainer {
+  display: flex;
   height: 90vh;
+}
+
+.about, .skills {
+  height: 95vh;
 }

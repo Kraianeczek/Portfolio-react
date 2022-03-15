@@ -7,7 +7,7 @@ import styles from './header.module.scss';
 const Header = () => {
   return (
     <header id="home">
-      <div className={styles.topContainer}>
+      <div className="topContainer">
         <div className={styles.mainPhoto}>
         
         </div>
