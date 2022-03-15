@@ -23,3 +23,31 @@ body {
 .about, .skills {
     height: 95vh;
 }
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 0vw;
+    @include var(background-color, wwhite);
+    border-radius: 30px;
+    transition-duration: 2s;
+}
+
+.subtitle {
+    font-size: 0;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+}
+
+.about:hover .amBox {
+    margin-top: 30px;
+    width: 35vw;
+    border-radius: 30px;
+}
+
+.about:hover .box .amSubtitle {
+    @include var(color, bblack);
+    font-size: 48px;
+}
