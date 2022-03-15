@@ -1,0 +1,6 @@
+.arrowBox {
+  height: calc(5vh - 5px);
+  text-align: center;
+  padding: 0;
+  border-top: 5px dotted var(--semib);
+}
