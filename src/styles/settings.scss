@@ -1,0 +1,25 @@
+$vars: (
+    wwhite: #f7f3ee,
+    lightb: #d5af90,
+    semib: #ba7245,
+    darkb: #422418,
+    bblack: #221313,
+);
+
+@mixin var($varName, $variable) {      // creating css code, @includes in code
+    #{$varName}: map-get($vars, $variable); // create normal code, all browsers can read it
+    #{$varName}: var(--#{$variable})   
+}
+
+:root {         // create fallbacks for each var 
+    @each $varName, $value in $vars {       
+        --#{$varName}: #{$value};
+    };
+    --ts: #000;
+    --gradient: linear-gradient(60deg,
+    #0000b3,
+    #7300e6,
+    #990099,
+    #cc0000
+    );
+}

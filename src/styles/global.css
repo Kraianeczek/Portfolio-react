@@ -1,0 +1,21 @@
+:root {
+  --wwhite: #f7f3ee;
+  --lightb: #d5af90;
+  --semib: #ba7245;
+  --darkb: #422418;
+  --bblack: #221313;
+  --ts: #000;
+  --gradient: linear-gradient(60deg, #0000b3, #7300e6, #990099, #cc0000);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d5af90;
+  background-color: var(--lightb);
+}
+
+.topContainer {
+  display: flex;
+  height: 90vh;
+}

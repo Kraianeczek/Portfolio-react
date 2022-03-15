@@ -1,0 +1,12 @@
+@import './settings.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    @include var(background-color, lightb);
+}
+
+.topContainer {
+    display: flex;
+    height: 90vh;
+}

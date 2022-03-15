@@ -1,0 +1,97 @@
+@import '../../../styles/settings.scss';
+
+header {
+    height: 100vh;
+}
+
+.topContainer {
+    display: flex;
+    height: 95vh;
+}
+
+.mainPhoto {
+    width: 80vw;
+    background-color: red;
+}
+
+.nav {
+    width: 20vw;
+    border-left: 5px solid #ba7245;
+}
+
+.name {
+    @include var(color, wwhite);
+    text-align: center;
+    text-shadow: 0.05em 0.05em 2px var(--ts), 0 0 1em var(--ts), 0 0 0.3em var(--ts);
+    font-size: 60px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    border-top: 5px dotted var(--semib);
+    border-bottom: 5px dotted var(--semib);
+}
+
+.links a {
+    position: relative;
+    display: block;
+    margin: 70px 0;
+    @include var(color, wwhite);
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0.05em 0.05em 2px var(--ts), 0 0 1em var(--ts), 0 0 0.3em var(--ts);
+    font-size: 40px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.links a:hover {
+    font-size: 46px;
+}
+
+.links a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--ts);
+    transform: scale(0);
+    transition: 1.5s;
+}
+
+.links a:hover::after {
+    transform: scale(0.5);
+}
+
+.arrows {
+    height: calc(5vh - 5px);
+    text-align: center;
+    padding: 0;
+    border-top: 5px dotted var(--semib);
+}
+
+.arrowUp {
+    margin: 0 20px;
+    @include var(color, wwhite);
+    font-size: 30px;
+    animation: slide1 ease-in-out 1.5s 0s infinite;
+}
+
+.arrows .arrowDown {
+    margin: 0 20px;
+    @include var(color, wwhite);
+    font-size: 30px;
+    animation: slide1 ease-in-out 1.5s 0.5s infinite;
+}
+
+@keyframes slide1 {
+    0%, 100% {transform: translate(0, 0);}
+    50% {transform: translate(0, 10px);}
+}
+
+.arrows i:hover {
+    font-size: 34px;
+}

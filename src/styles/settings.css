@@ -1,0 +1,9 @@
+:root {
+  --wwhite: #f7f3ee;
+  --lightb: #d5af90;
+  --semib: #ba7245;
+  --darkb: #422418;
+  --bblack: #221313;
+  --ts: #000;
+  --gradient: linear-gradient(60deg, #0000b3, #7300e6, #990099, #cc0000);
+}
