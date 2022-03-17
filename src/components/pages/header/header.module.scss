@@ -8,3 +8,19 @@ header {
     width: 80vw;
     background-color: red;
 }
+
+.text {
+    @include var(color, wwhite);
+    font-size: 32px;
+}
+
+.blink::after {
+    content: '|';
+    @include var(color, bblack);
+    font-weight: 900;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0 }
+}
